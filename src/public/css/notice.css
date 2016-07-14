@@ -1,0 +1,54 @@
+.tNotice-header {
+  margin: 0 auto;
+  width: 80%;
+}
+.table {
+  border-bottom: 2px solid #f34235;
+  text-align: center;
+}
+.table-header {
+  color: #f34235;
+}
+.table-body {
+  color: #000;
+  width: 100%;
+  border-bottom: 1px solid #f34235;
+}
+.notice-table-no {
+  font-size: 20px;
+}
+.notice-table-title {
+  font-size: 20px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.notice-table-title a,
+.notice-table-title a:hover {
+  font-size: 20px;
+  color: #000;
+}
+.notice-table-writer {
+  font-size: 20px;
+}
+.notice-table-date {
+  font-size: 20px;
+}
+
+.paging {
+  text-align: center;
+}
+.pagination > li > a, .pagination > li > span {
+  color: #f34235;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: #f34235;
+}
+.pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
+  color: #fbc9c5;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #f34235;
+  border-color: #f34235;
+}

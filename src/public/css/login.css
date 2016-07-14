@@ -1,0 +1,144 @@
+.login-container {
+  margin: 0 auto;
+  background-color: rgba(19, 35, 47, 1);
+}
+.nav-tabs {
+  border: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.nav-tabs > li {
+  text-align: center;
+  width: 50%;
+}
+.nav-tabs > li > a {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  color: #fff;
+  background-color: #3F759B;
+}
+.tabBtn {
+  height: 70px;
+}
+.tabBtn > span {
+  position: relative;
+  top: 24%;
+}
+.nav-tabs > li > a:hover {
+  background-color: #294c65;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0;
+  color: #fff;
+  background-color: #13232f;
+}
+
+.login-title {
+  text-align: center;
+  color: #fff;
+}
+.signup-title {
+  text-align: center;
+  color: #fff;
+}
+.field-wrap {
+  border-top: 2px solid #294c65;
+  margin-bottom: 50px;
+/*  position: relative;*/
+}
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
+  color: #fff;
+  font-size: 20px;
+  width: 0px;
+}
+.icon1 {
+  position: relative;
+  top: 95px;
+  left: 20px;
+  z-index: 1;
+}
+.icon2 {
+  position: relative;
+  top: 125px;
+  left: 20px;
+  z-index: 1;
+}
+.icon3 {
+  position: relative;
+  top: 175px;
+  left: 20px;
+  z-index: 1;
+}
+.icon4 {
+  position: relative;
+  top: 205px;
+  left: 20px;
+  z-index: 1;
+}
+.icon5 {
+  position: relative;
+  top: 235px;
+  left: 20px;
+  z-index: 1;
+}
+.icon6 {
+  position: relative;
+  top: 265px;
+  left: 20px;
+  z-index: 1;
+}
+.input {
+  width: 100%;
+  height: 70px;
+  color: #fff;
+  border: 0;
+  border-bottom: 2px solid #3F759B;
+  padding: 10px 0;
+  padding-left: 75px;
+  padding-right: 20px;
+  background-color: rgba(19, 35, 47, 1);
+}
+.input:focus {
+  outline: none;
+}
+.button1 {
+  width: 90%;
+  height: 70px;
+  border: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #294c65;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.button2 {
+  width: 90%;
+  height: 70px;
+  border: 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #294c65;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.button1:hover, .button2:hover {
+  background-color: #3F759B;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 17px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 17px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 17px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 17px;
+}

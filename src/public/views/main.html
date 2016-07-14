@@ -1,0 +1,311 @@
+<div class="main clearfix">
+  <div class="main-container clearfix">
+    <div class="imgs box col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      
+      <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          
+          <div class="item active">
+            <!-- 이미지 사이즈 1050 X 700 -->
+            <img src="img/slide-1.png">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img/slide-2.png">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img/slide-3.png">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+          </div>
+          
+          <div class="item">
+            <img src="img/slide-4.png">
+            <div class="carousel-caption">
+              <h3></h3>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        
+        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+      </div>
+      
+    </div>
+
+    <div class="free-board col-xs-12 col-sm-12 col-md-12 col-lg-6 clearfix">
+      
+      <div class="noti-box box">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+
+          <li role="presentation" class="active">
+            <a data-target='#travel' aria-controls="travel" role="button" data-toggle="tab" class="tabBtn">
+              <div>여행공지</div>
+            </a>
+          </li>
+
+          <li role="presentation">
+            <a data-target="#startup" aria-controls="startup" role="button" data-toggle="tab" class="tabBtn">
+              <div>창업공지</div>
+            </a>
+          </li>
+
+        </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+          <div role="tabpanel" class="tab-pane active" id="travel">
+             <div class="tNotice ">
+              <div class="notice-head">
+                <a href="" ui-sref="tNotice" class="notice-btn"><i class="fonti um-plus"></i></a>
+              </div>
+              <ul class="notice-list">
+                <li class="notice-title"><a href="">운영진 부원 모집 - 홍보팀 및 행사팀</a></li>
+                <li class="notice-title"><a href="">제 2회 강화 석모도 지역 탐방 여행 - 일정 및 스케줄</a></li>
+                <li class="notice-title"><a href="">제 1회 부산 지역 탐방 여행 - 일정 및 스케줄</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="startup">
+            <div id="signup">   
+              <div class="sNotice">
+                <div class="notice-head">
+                  <a href="" ui-sref="sNotice" class="notice-btn"><i class="fonti um-plus"></i></a>
+                </div>
+                <ul class="notice-list">
+                  <li class="notice-title"><a href="">운영진 부원 모집 - 홍보팀 및 행사팀</a></li>
+                  <li class="notice-title"><a href="">제 2회 창업 박람회 - 일정 및 참가자 모집</a></li>
+                  <li class="notice-title"><a href="">제 1회 체육대회 주점 행사 - 일정 및 스케줄</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="tFree box col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="tMarker"><img src="img/camping.png"></div>
+        <div class="Free-header">TRAVEL</div>
+        <a href="">
+          <div class="Free-content">
+            <div class="Free-date">2016-05-16</div>
+            <div class="Free-title">
+              제 1회 부산 지역 탐방 여행
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="tFree box col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <div class="sMarker"><img src="img/light.png"></div>
+        <div class="Free-header">START UP</div>
+        <a href="">
+          <div class="Free-content">
+            <div class="Free-date">2016-06-11</div>
+            <div class="Free-title">
+              제 2회 창업 박람회
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  
+    <div class="noti col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      
+      <a ng-href="file/form.txt" class="rBtn" download>
+        <div class="qFree box col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="qMarker"><i class="fonti um-file-download-o"></i></div>
+            <div class="Free-header3">FORM</div>
+            <div class="Free-header4">
+              동아리 가입 양식<br>
+              다운로드
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <a href="" ng-click="open()" class="rBtn">
+        <div class="qFree box col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="qMarker"><i class="fonti um-send-o"></i></div>
+            <div class="Free-header3">SEND</div>
+            <div class="Free-header4">
+              동아리 가입 양식 <br>
+              보내기
+            </div>
+          </div>
+        </div>
+      </a>
+      
+      <a ng-href="https://www.facebook.com" class="rBtn" target="_blank">
+        <div class="rFree hbox col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="rMarker"><i class="fonti um-facebook"></i></div>
+            <div class="Free-header1">PLAN 공식 <br>페이스북 페이지</div>
+          </div>
+        </div>
+      </a>
+      
+      <a ng-href="http://www.naver.com" class="rBtn" target="_blank">
+        <div class="dFree hbox col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="dMarker"><i class="fonti um-naver-square"></i></div>
+            <div class="Free-header1">PLAN 공식 <br>네이버 카페</div>
+          </div>
+        </div>
+      </a>
+      
+      <a ng-href="https://open.kakao.com/o/sOUSXBl" class="rBtn" target="_blank">
+        <div class="kFree hbox col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="kMarker"><i class="fonti um-kakao-talk"></i></div>
+            <div class="Free-header2">1:1 상담 <br> KaKao 오픈채팅</div>
+          </div>
+        </div>
+      </a>
+      
+      <a href="" ui-sref="faq" class="rBtn">
+        <div class="kFree hbox col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="rcover">
+            <div class="kMarker"><i class="fonti um-faq-o"></i></div>
+            <div class="Free-header2">궁금한점이 있다면 <br>
+              이곳을 눌러주세요</div>
+          </div>
+        </div>
+      </a>
+      
+    </div>
+
+    <div class="imgs box col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <youtube-video video-id="theBestVideo" player-width="'100%'" player-height="'100%'"></youtube-video>
+<!--      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WkdtmT8A2iY" frameborder="0" allowfullscreen></iframe>-->
+    </div>
+    
+  </div>
+</div>
+
+<!--파일이 없을때 경고창-->
+<div class="alert alert-danger" id="noFile" role="alert" style="display:none;">
+  <strong>Warning!</strong> 
+  <div class="alert-text"></div>
+  <button type="button" class="btn btn-danger" id="danger-btn">확인</button>
+</div>
+
+<!--파일 업로드 성공-->
+<div class="alert alert-success" id="upFile" role="alert" style="display:none;">
+  <strong id="success-title"></strong> 
+  <div class="success-text"></div>
+  <button type="button" id="success-btn" class="btn btn-success" style="display:none;">
+    확인
+  </button>
+</div>
+
+<script>
+  $(document).ready(function() {
+    
+    $(document).on("click", "#danger-btn", function() {
+      $('#noFile').css('display','none');
+    });
+    $(document).on("click", "#success-btn", function() {
+      $('#upFile').css('display','none');
+    });
+    
+    
+    $(document).on("click", "#upload", function() {
+      if ($("#file").prop("files")[0] !== undefined) {
+        
+        $('#success-title').html('양식을 보내는 중입니다...');
+        $('.success-text').html('<i class="fonti um-spinner-alt um-pulse"></i>');
+        $('#upFile').css('display','');
+        
+        var file_data = $("#file").prop("files")[0];
+        var file_name = file_data.name;
+        
+        if (file_name !== '양식이름') {
+          $('.alert-text').html('동아리 가입 양식만 보낼수 있습니다.');
+          $('#noFile').css('display','');
+        } else {
+//          여기에 ajax 넣기 
+        }
+        
+        var form_data = new FormData();
+        form_data.append("file", file_data);
+
+        $.ajax({
+          url: "/upload",
+          dataType: 'json',
+          cache: false,
+          contentType: false,
+          processData: false,
+          data: form_data,
+          type: 'post',
+          success: function(re) {
+            console.log('성공');
+            $('#success-title').html('성공적으로 양식을 보냈습니다.');
+            $('.success-text').html('<i class="fonti um-check"></i>');
+            $('#success-btn').css('display','');
+          }
+        }); // ajax - end
+        
+      } else {
+        console.log('파일없음');
+        $('.alert-text').html('파일을 선택하지 않았습니다.');
+        $('#noFile').css('display','');
+      } // else - end
+      
+    });
+  });
+  
+  $('#carousel-generic').carousel({
+    interval: 20000
+  })
+</script>
+
+<script type="text/ng-template" id="myModalContent.html">
+
+  <div class="modal-header">
+    <h3 class="modal-title">동아리 가입 양식 보내기</h3>
+  </div>
+
+  <div class="modal-body">
+    <input type="file" name="myfile1" id="file">    
+  </div>
+
+  <div class="modal-footer">
+    <input type="button" value="Upload" id="upload" ng-click="ok()" class="btn btn-default">
+  </div>
+
+</script>

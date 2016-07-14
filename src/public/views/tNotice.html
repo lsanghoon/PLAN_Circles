@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="main-container">
+    
+    <div class="tNotice-header">
+      공지사항
+    </div>
+    
+    <div class="table">
+      <div class="table-header">
+        <div class="notice-table-no">#</div>
+        <div class="notice-table-title">제목</div>
+        <div class="notice-table-writer">작성자</div>
+        <div class="notice-table-date">날짜</div>
+      </div>
+
+      <div class="table-body clearfix" ng-repeat="todo in communityLists">
+        <div class="notice-table-no">{{todo.no}}</div>
+        <div class="notice-table-title">
+          <a href="">
+            {{todo.text}}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddaa
+          </a>
+       </div>
+        <div class="notice-table-writer">{{todo.writer}}</div>
+        <div class="notice-table-date">{{todo.date}}</div>
+      </div>
+    </div>
+
+    
+    <div class="paging">
+      <uib-pagination ng-model="communityPage" total-items="community.length" max-size="maxSize" boundary-links="true" class="pagination" first-text='<<' last-text='>>' next-text='>' previous-text='<'></uib-pagination>
+    </div>
+    
+  </div>
+</div>
+    
