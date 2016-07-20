@@ -14,8 +14,6 @@
   /* 이미지슬라이드 */
   .carousel-indicators {left: 95%;}
   /* 공지 */
-  .notice-title {display: none;}
-  .notice-content {height: 100%;}
   .tabs {
     width: 100%;
     margin-top: 50px;
@@ -24,6 +22,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
   }
+  .notice-title {display: none;}
+  .notice-content {height: 100%;}
   .n-3 {display: none;}
   /* 4번째 섹션 */
   .links {padding: 37px 10px;}
@@ -36,10 +36,9 @@
   .cpright {font-size: 12px;}
   
   /* 소개 페이지 */
-  .planInfo-list {margin-top: 10px;}
+  .planInfo-list {margin-top: 50px;}
   .info-content {width: 100%;}
   .info-img img {width: 100%;}
-  .person-like {width: 100%;}
   
   /* 공지 페이지 */
   .tNotice-header {font-size: 2.3em;}
@@ -68,6 +67,13 @@
   /* 이미지슬라이드 */
   .carousel-indicators {left: 114%;}
   /* 공지 */
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .notice-title {
     height: 100%;
     display: flex;
@@ -78,25 +84,17 @@
     font-weight: 800;
   }
   .notice-content {height: 100%;}
-  .tabs {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
   /* 4번째 섹션 */
   .links {padding: 45px 10px;}
   /* 5번째 섹션 */
   #five {height: 60vh;}
   
   /* 소개 페이지 */
-  .planInfo-header {padding-left: 0px;}
   .planInfo-list {margin-top: 55px;}
-  .person-image img {width: 200px;}
-  .person-like {width: 100%;}
+  .planInfo-header {padding-left: 0px;}
   .info-content {width: 100%;}
   .info-img img {width: 100%;}
+  .person-image img {width: 200px;}
   
   /* 공지 페이지 */
   .tNotice-header {font-size: 3em;}
@@ -134,6 +132,13 @@
   /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
   /* 공지 */
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .notice-title {
     height: 100%;
     display: flex;
@@ -144,26 +149,18 @@
     font-weight: 800;
   }
   .notice-content {height: 100%;}
-  .tabs {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
   /* 4번째 섹션 */
   .links {padding: 90px 10px;}
   /* 5번째 섹션 */
   #five {height: 60vh;}
   
   /* 소개 페이지 */ 
+  .planInfo-list {margin-top: 105px;}
   .planInfo-header {padding-left: 0px;}
   .planInfo-title {margin-top: 50px;}
-  .planInfo-list {margin-top: 105px;}
-  .person-image img {width: 180px;}
   .info-content {width: 100%;}
   .info-img img {width: 100%;}
-  .person-like {width: 80%;}
+  .person-image img {width: 180px;}
   
   /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}
@@ -201,6 +198,13 @@
   /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
   /* 공지 */
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .notice-title {
     height: 100%;
     display: flex;
@@ -211,26 +215,18 @@
     font-weight: 800;
   }
   .notice-content {height: 100%;}
-  .tabs {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
   /* 4번째 섹션 */
   .links {padding: 90px 10px;}
   /* 5번째 섹션 */
   #five {height: 60vh;}
   
   /* 소개 페이지 */
+  .planInfo-list {margin-top: 105px;margin-left: 0px;}
   .planInfo-title {margin-top: 50px;width: 98%;}
   .planInfo-content {width: 98%;}
-  .planInfo-list {margin-top: 105px;margin-left: 0px;}
-  .person-image img {width: 250px;}
   .info-content {width: 60%;}
   .info-img img {width: 60%;}
-  .person-like {width: 80%;}
+  .person-image img {width: 250px;}
   
   /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}
@@ -267,6 +263,13 @@
   /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
   /* 공지 */
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   .notice-title {
     height: 100%;
     display: flex;
@@ -277,26 +280,18 @@
     font-weight: 800;
   }
   .notice-content {height: 100%;}
-  .tabs {
-    width: 90%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-  }
   /* 4번째 섹션 */
   .links {padding: 90px 10px;}
   /* 5번째 섹션 */
   #five {height: 60vh;}
   
   /* 소개 페이지 */
-  .planInfo-title {margin-top: 50px;width: 98%;}
-  .planInfo-content {width: 98%;}
   .planInfo-list {margin-top: 105px;margin-left: 0px;}
-  .person-image img {width: 250px;}
-  .info-content {width: 60%;}
+  .planInfo-title {margin-top: 85px;width: 100%;}
+  .planInfo-content {max-width: 1000px;}
+  .info-content {width: 100%;}
   .info-img img {width: 60%;}
-  .person-like {width: 80%;}
+  .person-image img {width: 250px;}
   
   /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}

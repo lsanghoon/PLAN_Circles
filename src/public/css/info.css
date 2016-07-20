@@ -1,34 +1,78 @@
+/* 사이드 리스트 */
+.planInfo-list {
+  text-align: center;
+}
+.list-group-item {
+  max-width: 380px;
+  padding: 15px 0;
+}
+/* 선택된 박스 색 */
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: #f34235;
+  border-color: #f34235;
+}
+
+/* 본문 */
+.info-bg {
+  background-image: url(../img/three.png);
+  background-size: cover;
+}
+.info-sub-bg {
+  background-color: rgba(42,50,56,.7);
+}
+.planInfo-header {
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+}
 .planInfo-title {
   font-size: 2.5em;
-  border-bottom: 1px solid #2a3238;
+  border-bottom: 1px solid #fff;
   padding: 0 20px;
 }
 .planInfo-content {
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-size: 20px;
   word-break: break-all;
 }
-.planInfo-header {
-  padding-left: 0;
-  padding-right: 0;
+/* 내용 소 제목 */
+.info-title {
+  font-weight: 700;
+  font-size: 34px;
 }
-.planInfo-list {
-  max-width: 400px;
-  text-align: center;
-}
-.list-group-item {
-  padding: 15px 0;
+/* 내용 */
+.info-content {
+  white-space: pre-line;
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 30px;
+  word-spacing: 6px;
+  font-size: 20px;
 }
 
+/* PLAN 소개글내 이미지 */
+.info-img {
+  margin-top: -30px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info-img img {
+  border: 4px solid #f34235;
+}
+
+/* 운영진 소개 */
 .person {
   padding: 35px 20px;
 }
 .person-imgae {
   position: relative;
 }
+/* 운영진 이미지 */
 .person-image img {
   position: relative;
   top: 50%;
@@ -36,22 +80,28 @@
   transform: translate(-50%, 0%);
   border-radius: 50%;
 }
+/* 운영진 정보 */
 .person-info {
   text-align: center;
   margin-top: 20px;
 }
+/* 운영진 이름 */
 .person-name {
   font-size: 25px;
 }
+/* 운영진 직책 */
 .person-position {
   font-size: 20px;
 }
+/* 운영진 이메일 */
 .person-email {
   font-size: 17px;
   opacity: 0.7;
   padding-bottom: 10px;
 }
+/* 운영진 한마디 */
 .person-like {
+  width: 100%;
   height: 100px;
   margin: 0 auto;
   padding-top: 10px;
@@ -59,24 +109,43 @@
   border-top: 2px solid #f35235;
 }
 
-
-.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-  background-color: #f34235;
-  border-color: #f34235;
+/* FAQ */
+.faq-header {
+  font-size: 3em;
+}
+.panel-group {
+  padding: 30px 0;
+  margin: 0 auto;
+}
+.panel-default > .panel-heading {
+  color: #fff;
+  background-color: #2a3238;
+  position: relative;
+  height: 60px;
+}
+.panel-title {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.panel-group .panel {
+  margin: 30px 0;
+  border: 0;
 }
 
-
-
-.info-title {
-  font-weight: 700;
-  font-size: 
+/*질문글자*/
+.accordion-toggle span {
+  font-size: 20px; 
 }
-.info-content {
-/*  width: 100%;*/
-  white-space: pre-line;
-  word-break: break-all;
-  word-wrap: break-word;
-  line-height: 30px;
-  word-spacing: 6px;
+.accordion-toggle:focus {
+  text-decoration: none;
+  outline: none;
+}
+/*답변글자*/
+.panel-body {
+  background-color: #fafafa;
+}
+.panel-body span {
   font-size: 20px;
+  color: #2a3238;
 }

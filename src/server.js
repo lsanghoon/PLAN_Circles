@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 // Controllers
 var dataController = require('./controllers/data');
+var userController = require('./controllers/user');
 
 var app = express();
 
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/upload', dataController.fileUploadSendMail);
+//app.post('/login', userController.login);
 
 
 app.get('*', function(req, res) {
