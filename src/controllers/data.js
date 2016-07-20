@@ -5,13 +5,15 @@ var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 
+var info = require('./xoauth2.json');
+
 var generator = xoauth2.createXOAuth2Generator({
-  user: 'user.email',
-  clientId: 'user.clientId',
-  clientSecret: 'user.clientSecret',
-  refreshToken: 'user.refreshToken',
-  accessToken: 'user.accessToken'
-})
+  'user': info.user,
+  'clientId': info.clientId,
+  'clientSecret': info.clientSecret,
+  'refreshToken': info.refreshToken,
+  'accessToken': info.accessToken
+});
 
 // listen for token updates (if refreshToken is set)
 // you probably want to store these to a db
@@ -36,7 +38,7 @@ exports.fileUploadSendMail = function(req, res) {
 
   // get field name & value
   form.on('field',function(name,value){
-       console.log('normal field / name = ' + name + ' , value = ' + value);
+    console.log('normal field / name = ' + name + ' , value = ' + value);
   });
 
   // 파일 업로드 핸들링
@@ -85,14 +87,15 @@ exports.fileUploadSendMail = function(req, res) {
 
       smtpTransport.sendMail(mailOptions, function(error, response) {
         if (error){
-          console.log("Error");
+          console.log("전송 실패");
           console.log(error);
+          res.end('{"success" : "false"}');
         } else {
           console.log(response);
-          console.log("Message sent : " + response.message);
+          console.log("전송 성공");
+          res.end('{"success" : "true"}');
         }
         smtpTransport.close();
-        res.end('{"success" : "success"}');
       });
 
   });

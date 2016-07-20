@@ -1,3 +1,3 @@
 bower_components/
 node_modules/
-xoauth2.txt
+src/controllers/xoauth2.json

@@ -132,10 +132,16 @@
           data: form_data,
           type: 'post',
           success: function(re) {
-            console.log('성공');
-            $('#success-title').html('성공적으로 양식을 보냈습니다.');
-            $('.success-text').html('<i class="fonti um-check"></i>');
-            $('#success-btn').css('display','');
+            if (re.success == 'true') {
+              console.log('성공');
+              $('#success-title').html('성공적으로 양식을 보냈습니다.');
+              $('.success-text').html('<i class="fonti um-check"></i>');
+              $('#success-btn').css('display','');
+            } else if (re.success == 'false') {
+              console.log('실패');
+              $('.alert-text').html('업로드 실패 관리자에게 문의하세요.');
+              $('#noFile').css('display','');
+            }
           }
         }); // ajax - end
         
