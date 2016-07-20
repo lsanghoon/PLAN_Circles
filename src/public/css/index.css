@@ -6,12 +6,12 @@
   font-weight: 500;
 }
 
-body {
-/*  margin-top: -1px;*/
-}
 a, a:hover {
   text-decoration: none;
 }
+
+
+/* 메뉴바 */
 .container-fluid {
   clear:both;
 }
@@ -27,7 +27,6 @@ a, a:hover {
   height: 40px;
 }
 
-
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #fff;
 }
@@ -38,30 +37,15 @@ a, a:hover {
   padding-right: 40px;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #2a3238;
+  background-color: rgba(42,50,56,.6);
   color: #fff;
 }
 .navbar-default {
-  background-color: #2a3238;
-  border-color: #fff;
-}
-
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: transparent;
-}
-.navbar-toggle {
-  border: 2px solid rgba(0, 0, 0, 0);
-}
-.navbar-default .navbar-toggle {
-  border-color: #fff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+  background-color: rgba(42,50,56,.6);
+  border-color: transparent;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: #fff;
-/*  border-bottom: 1px solid #fff;*/
 }
 .navbar-nav .open .dropdown-menu {
   border-bottom: 1px solid #fff;
@@ -75,9 +59,25 @@ a, a:hover {
   font-size: 22px;
 }
 
+
+/* 메뉴바 토글 - 모바일 */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-toggle {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+
+/* 메인 컨테이너 */
 .container {
-  background-color: #f0f0f0;
-  padding-top: 50px;
+  background-color: #fff;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
@@ -85,6 +85,7 @@ a, a:hover {
 }
 
 
+/* 푸터 */
 footer {
   background-color: #2a3238;
   clear:both;

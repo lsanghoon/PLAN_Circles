@@ -1,36 +1,47 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 757px) {
-  .box {min-height: 260px;}
-  .hbox {min-height: 130px;}
-  .imgs {min-height: 300px;}
-  .item > img {min-height: 300px;}
-  .carousel-caption > h3 {font-size: 1.5em;}
-  .carousel-indicators {left: 95%;}
-/*  .carousel-indicators {right: 105px;}*/
-  .carousel-caption {bottom: 15%;}
-  .notice-title {padding: 5px 0;margin-left: -25px;width: 100%;}
-  .notice-title > a {font-size: 1.1em;}
-  .notice-header {font-size: 1.2em;}
-  .notice-btn {margin-top: 14px;}
-  .tabBtn > div {font-size: 1.2em;}
-  
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #fff;font-weight: 300;padding: 10px;padding-left: 20px;font-size: 1.1em;}
+  /* 메인 메뉴바 */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #fff;font-weight: 400;padding: 10px;padding-left: 20px;font-size: 1.3em;}
   .dropdown-menu {padding-top: 0;padding-bottom: 15px;}
   .navbar-collapse{margin-bottom: 15px;}
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {box-shadow: 0px 10px 16px -6px rgba(42,50,56,1);}
   
-  .Free-content {height: 50%;}
-  .Free-header1, .Free-header2 {left: 65%;font-size: 22px;}
+  /* 서브 메뉴바 */
+  .sub-menu {display: none;}
   
+  /* 메인페이지 */
+  /* 1번째 섹션 글자사이즈 */
+  .text,.dud{font-size: 38px;}
+  /* 이미지슬라이드 */
+  .carousel-indicators {left: 95%;}
+  /* 공지 */
+  .notice-title {display: none;}
+  .notice-content {height: 100%;}
+  .tabs {
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .n-3 {display: none;}
+  /* 4번째 섹션 */
+  .links {padding: 37px 10px;}
+  /* 5번째 섹션 */
+  #five {height: 120vh;}
+  
+  /* 푸터 */
   .foo-content {height: 180px;}
   .foo-right {margin-top: 15px;}
   .cpright {font-size: 12px;}
   
+  /* 소개 페이지 */
   .planInfo-list {margin-top: 10px;}
   .info-content {width: 100%;}
   .info-img img {width: 100%;}
   .person-like {width: 100%;}
   
+  /* 공지 페이지 */
   .tNotice-header {font-size: 2.3em;}
   .table-header {display: none;}
   .table-body {padding: 10px 10px;}
@@ -48,22 +59,38 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 758px) and (max-width: 991px) {
-  .box {min-height: 350px;}
-  .hbox {min-height: 175px;}
-  .imgs {min-height: 400px;}
-  .item > img {min-height: 400px;}
-  .carousel-caption > h3 {font-size: 2em;}
+  /* 서브 메뉴바 */
+  .sub-menu {display: none;}
+  
+  /* 메인페이지 */
+  /* 1번째 섹션 글자사이즈 */
+  .text,.dud{font-size: 80px;}
+  /* 이미지슬라이드 */
   .carousel-indicators {left: 114%;}
-  .carousel-caption {bottom: 10%;}
-  .notice-title {padding: 7px 0;margin-left: -25px;width: 100%;}
-  .notice-title > a {font-size: 1.5em;}
-  .notice-header {font-size: 1.8em;}
-  .notice-btn {margin-top: 17px;}
-  .tabBtn > div {font-size: 1.4em;}
+  /* 공지 */
+  .notice-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .notice-content {height: 100%;}
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  /* 4번째 섹션 */
+  .links {padding: 45px 10px;}
+  /* 5번째 섹션 */
+  #five {height: 60vh;}
   
-  .Free-content {height: 50%;}
-  .Free-header1, .Free-header2 {left: 60%;font-size: 25px;}
-  
+  /* 소개 페이지 */
   .planInfo-header {padding-left: 0px;}
   .planInfo-list {margin-top: 55px;}
   .person-image img {width: 200px;}
@@ -71,6 +98,7 @@
   .info-content {width: 100%;}
   .info-img img {width: 100%;}
   
+  /* 공지 페이지 */
   .tNotice-header {font-size: 3em;}
   .table-header {border-bottom: 3px solid #f34235;display: flex;padding: 10px 0;}
   .table-body {display: flex;padding: 10px 0;}
@@ -87,27 +115,48 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {}
-/*  max-width: 1050px;*/
-  .main {margin: 0 auto;}
-/*  .box {min-height: 300px;max-width:1050px;}*/
-/*  .hbox {min-height: 150px;max-width:1050px;}*/
-  .imgs {min-height: 600px;}
+  /* 메인 메뉴바 */
+  .container-fluid {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-default {height: 100px;}
+  .navbar-nav > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   
-  .item > img {min-height: 600px;}
-  .carousel-caption > h3 {font-size: 1.5em;}
+  /* 메인페이지 */
+  /* 1번째 섹션 글자사이즈 */
+  .text,.dud{font-size: 100px;}
+  /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
-  .carousel-caption {bottom: 25%;}
-  .notice-title {padding:5px 0;margin-left: -20px;width: 100%;}
-  .notice-title > a {font-size: 1.4em;}
-  .notice-btn {margin-top: 20px;margin-right: 20px;}
-  .tabBtn > div {font-size: 1.4em;}
+  /* 공지 */
+  .notice-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .notice-content {height: 100%;}
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  /* 4번째 섹션 */
+  .links {padding: 90px 10px;}
+  /* 5번째 섹션 */
+  #five {height: 60vh;}
   
-  .Free-content {height: 45%;}
-  .Free-content:hover {background-color: rgba(0,0,0,0.8);}
-  .Free-header1, .Free-header2 {left: 70%;font-size: 26px;}
-  .rcover:hover {background-color: rgba(0,0,0,0.5);}
-  
+  /* 소개 페이지 */ 
   .planInfo-header {padding-left: 0px;}
   .planInfo-title {margin-top: 50px;}
   .planInfo-list {margin-top: 105px;}
@@ -116,6 +165,7 @@
   .info-img img {width: 100%;}
   .person-like {width: 80%;}
   
+  /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}
   .table-header {border-bottom: 3px solid #f34235;display: flex;padding: 10px;}
   .table-body {display: flex;padding: 15px 0;}
@@ -132,27 +182,48 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1449px) {
-/*  .container {min-width:1456px;}*/
-  .box {min-height: 300px;}
-  .hbox {min-height: 150px;}
-  .imgs {min-height: 600px;}
-  /*  max-width: 1050px;*/
-  .main {margin: 0 auto;}
-/*  min-width: 728px;*/
-  .item > img {min-height: 600px;}
-  .carousel-caption > h3 {font-size: 2em;}
+  /* 메인 메뉴바 */
+  .container-fluid {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-default {height: 100px;}
+  .navbar-nav > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  /* 메인페이지 */
+  /* 1번째 섹션 글자사이즈 */
+  .text,.dud{font-size: 125px;}
+  /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
-  .carousel-caption {bottom: 25%;}
-  .notice-title {padding: 5px 0;width: 95%;}
-  .notice-title > a {font-size: 1.4em;}
-  .notice-btn {margin-top: 20px;}
-  .tabBtn > div {font-size: 1.4em;}
+  /* 공지 */
+  .notice-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .notice-content {height: 100%;}
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  /* 4번째 섹션 */
+  .links {padding: 90px 10px;}
+  /* 5번째 섹션 */
+  #five {height: 60vh;}
   
-  .Free-content {height: 45%;}
-  .Free-content:hover {background-color: rgba(0,0,0,0.6);}
-  .Free-header1, .Free-header2 {left: 65%;font-size: 22px;}
-  .rcover:hover {background-color: rgba(0,0,0,0.4);}
-  
+  /* 소개 페이지 */
   .planInfo-title {margin-top: 50px;width: 98%;}
   .planInfo-content {width: 98%;}
   .planInfo-list {margin-top: 105px;margin-left: 0px;}
@@ -161,6 +232,7 @@
   .info-img img {width: 60%;}
   .person-like {width: 80%;}
   
+  /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}
   .table-header {border-bottom: 3px solid #f34235;display: flex;padding:10px;}
   .table-body {display:flex;padding:15px 0;}
@@ -176,27 +248,48 @@
 }
 
 @media (min-width: 1450px) {
-/*  .container {min-width:1456px;}*/
-  .box {min-height: 300px;}
-  .hbox {min-height: 150px;}
-  .imgs {min-height: 600px;}
-  /*  max-width: 1050px;*/
-  .main {margin: 0 auto;min-width: 1280px;}
-/*  min-width: 728px;*/
-  .item > img {min-height: 600px;}
-  .carousel-caption > h3 {font-size: 2em;}
+  /* 메인 메뉴바 */
+  .container-fluid {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-default {height: 100px;}
+  .navbar-nav > li > a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  /* 메인페이지 */
+  /* 1번째 섹션 글자사이즈 */
+  .text,.dud{font-size: 150px;}
+  /* 이미지슬라이드 */
   .carousel-indicators {left: 118%;}
-  .carousel-caption {bottom: 25%;}
-  .notice-title {padding: 5px 0;width: 95%;}
-  .notice-title > a {font-size: 1.4em;}
-  .notice-btn {margin-top: 20px;}
-  .tabBtn > div {font-size: 1.4em;}
+  /* 공지 */
+  .notice-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .notice-content {height: 100%;}
+  .tabs {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  /* 4번째 섹션 */
+  .links {padding: 90px 10px;}
+  /* 5번째 섹션 */
+  #five {height: 60vh;}
   
-  .Free-content {height: 45%;}
-  .Free-content:hover {background-color: rgba(0,0,0,0.6);}
-  .Free-header1, .Free-header2 {left: 59%;font-size: 25px;}
-  .rcover:hover {background-color: rgba(0,0,0,0.4);}
-  
+  /* 소개 페이지 */
   .planInfo-title {margin-top: 50px;width: 98%;}
   .planInfo-content {width: 98%;}
   .planInfo-list {margin-top: 105px;margin-left: 0px;}
@@ -205,6 +298,7 @@
   .info-img img {width: 60%;}
   .person-like {width: 80%;}
   
+  /* 공지 페이지 */
   .tNotice-header {font-size: 5em;}
   .table-header {border-bottom: 3px solid #f34235;display: flex;padding:10px;}
   .table-body {display:flex;padding:15px 0;}

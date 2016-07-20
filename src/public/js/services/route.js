@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp', ['ui.router','ui.bootstrap','youtube-embed']);
+var myApp = angular.module('myApp', ['ngMaterial','ui.router','ui.bootstrap','youtube-embed']);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -9,7 +9,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state('main', {
     url: "/main",
-    templateUrl: "views/main.html",
+    templateUrl: "views/main2.html",
     controller: "mainCtrl"
   })
   .state('login', {

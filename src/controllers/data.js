@@ -30,12 +30,14 @@ var smtpTransport = nodemailer.createTransport(smtpTransport(options));
 
 
 exports.fileUploadSendMail = function(req, res) {
+  console.log(req);
+  console.log(res);
   var form = new multiparty.Form();
   var mailOptions;
 
   // get field name & value
   form.on('field',function(name,value){
-       console.log('normal field / name = '+name+' , value = '+value);
+       console.log('normal field / name = ' + name + ' , value = ' + value);
   });
 
   // 파일 업로드 핸들링
