@@ -6,11 +6,11 @@ var smtpTransport = require('nodemailer-smtp-transport');
 var xoauth2 = require('xoauth2');
 
 var generator = xoauth2.createXOAuth2Generator({
-  user: 'sou1.kiss1010@gmail.com',
-  clientId: '645757755390-0upisnfnht90n4nnnfgbkimrkhds37ss.apps.googleusercontent.com',
-  clientSecret: 'hNl-kXuUJ_ScO15gEp8YPIOX',
-  refreshToken: '1/P0qBR2p3NzdGseVaKFX6HhBZVZ61mopEoYE1HZIndKQ',
-  accessToken: 'ya29.Ci8gA7PzneolX1p14lm2PPuT4OIpBg17WAHwOkXq5NRyfdqCy6_wp7rgOQyj4C3I8Q'
+  user: 'user.email',
+  clientId: 'user.clientId',
+  clientSecret: 'user.clientSecret',
+  refreshToken: 'user.refreshToken',
+  accessToken: 'user.accessToken'
 })
 
 // listen for token updates (if refreshToken is set)
@@ -30,8 +30,7 @@ var smtpTransport = nodemailer.createTransport(smtpTransport(options));
 
 
 exports.fileUploadSendMail = function(req, res) {
-  console.log(req);
-  console.log(res);
+
   var form = new multiparty.Form();
   var mailOptions;
 
