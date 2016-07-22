@@ -5,7 +5,7 @@
         
         <md-input-container class="md-block">
           <label>Email</label>
-          <input required type="email" name="email" ng-model="email" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" autocomplete="off" />
+          <input required type="email" name="email" id="loginEmail" ng-model="email" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" autocomplete="off" />
           <div ng-messages="projectForm.email.$error" role="alert">
             <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
               이메일형식이어야 하고 최소 10글자에서 최대 100글자까지 됩니다
@@ -15,7 +15,7 @@
 
         <md-input-container class="md-block">
           <label>Password</label>
-          <input required type="password" name="password" ng-model="password">
+          <input required type="password" name="password" id="loginPwd" ng-model="password">
           <div ng-messages="projectForm.password.$error">
             <div ng-message="required">패스워드를 입력해주세요</div>
           </div>

@@ -1,0 +1,168 @@
+<div class="main info-bg">
+  <div class="main-container info-sub-bg signup-height">
+  
+    <div class="signup-width">
+      <form name="projectForm" ng-submit="signUpSubmit()">
+
+        <div layout-gt-sm="row" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>이메일</label>
+            <input required type="email" name="email" ng-model="user.email" minlength="10" md-maxlength="100" ng-pattern="/^.+@.+\..+$/" autocomplete="off" />
+            <div ng-messages="projectForm.email.$error" role="alert">
+              <div ng-message-exp="['required', 'minlength', 'md-maxlength', 'pattern']">
+                이메일형식이어야 하고 최소 10글자에서 최대 100글자까지 됩니다
+              </div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>패스워드</label>
+            <input required type="password" id="pw1" name="password" ng-model="user.password" minlength="8" md-maxlength="30" autocomplete="off" />
+            <div ng-messages="projectForm.password.$error" role="alert">
+              <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                패스워드는 8 ~ 30자로만 설정할 수 있습니다.
+              </div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row" class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>패스워드 확인</label>
+            <input required type="password" id="pw2" name="pw2" ng-model="pw2" minlength="8" md-maxlength="30" autocomplete="off" pw-check="pw1"/>
+<!--                <div class="msg-block" ng-show="projectForm.$error">-->
+            <div class="msg-block" ng-show="projectForm.$error">
+              <span class="msg-error" ng-show="projectForm.pw2.$error.pwmatch">
+                패스워드가 일치하지 않습니다.
+              </span> 
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row"  class="up signUpName col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>이름</label>
+            <input md-maxlength="30" required name="name" ng-model="user.name"  autocomplete="off"/>
+            <div ng-messages="projectForm.name.$error">
+              <div ng-message="required">이름을 입력해주세요!</div>
+              <div ng-message="md-maxlength">이름은 30자 이하로 입력해주세요!</div>
+            </div>
+          </md-input-container>
+        </div>
+        
+        <div class="celNgen up col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <label class="birth-gender-title">생년월일 / 성별</label>
+          <div layout-gt-xs="row">
+            <md-datepicker required class="dateSel col-xs-12 col-sm-12 col-md-8 col-lg-8" ng-model="user.birth" md-placeholder="ex) YYYY.MM.DD">
+            </md-datepicker>
+
+            <md-radio-group ng-model="user.gender" class="radio-parent col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <md-radio-button value="male" class="md-primary radio-male">남</md-radio-button>
+              <md-radio-button value="female" class="radio-female">여</md-radio-button>
+            </md-radio-group>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+        
+        <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>핸드폰번호</label>
+            <input required name="cphone" ng-model="user.cphone" type="tel" minlength="9" md-maxlength="11" autocomplete="off"/>
+            <div class="hint">' - ' 없이 입력해주세요</div>
+            <div ng-messages="projectForm.cphone.$error" role="alert">
+              <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
+                핸드폰번호를 입력해주세요! 번호는 9 ~ 11자리의 수만 입력할 수 있습니다.
+              </div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>집전화번호</label>
+            <input required type="tel" name="hphone" ng-model="user.hphone" minlength="9" md-maxlength="11" autocomplete="off"/>
+            <div class="hint">' - ' 없이 입력해주세요</div>
+            <div ng-messages="projectForm.hphone.$error">
+              <div ng-message-exp="['required', 'minlength', 'md-maxlength']" role="alert">
+                집 전화번호를 입력해주세요! 번호는 9 ~ 11자리의 수만 입력할 수 있습니다.
+              </div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>주소</label>
+            <input required name="addr" ng-model="user.addr" autocomplete="off"/>
+            <div ng-messages="projectForm.addr.$error">
+              <div ng-message="required">주소를 입력해주세요!</div>
+            </div>
+          </md-input-container>
+        </div>
+
+        <div layout-gt-sm="row" class="up profileImg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <label for="img" class="img-label img-btn">프로필 이미지 선택</label>
+          <input type="file" name="img" ng-model="user.img" id="img" required>
+          <div class="imgWarn">본 이미지는 명단작성시 이용되므로 자신의 이미지를 올리지 않을 경우 가입거절 또는 불이익을 받을 수 있습니다.</div>
+
+        </div>
+        
+        <div layout-gt-sm="row" class="up selJob col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <md-input-container>
+            <label>직업</label>
+            <md-select ng-model="user.job" md-selected-text="getSelected()">
+              <md-option ng-repeat="job in jobs" ng-value="job">
+                {{job}}
+              </md-option>
+            </md-select>
+          </md-input-container>
+        </div>
+        
+        <div layout-gt-sm="row" id="school" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>학교명</label>
+            <input name="school" ng-model="user.school" autocomplete="off"/>
+            <div ng-messages="projectForm.school.$error">
+              <div ng-message="required">학교명을 입력해주세요!</div>
+            </div>
+          </md-input-container>
+        </div>
+        
+        <div layout-gt-sm="row" id="stu_no" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>학번</label>
+            <input name="stu_no" ng-model="user.stu_no" autocomplete="off"/>
+            <div ng-messages="projectForm.stu_no.$error">
+              <div ng-message="required">학번을 입력해주세요!</div>
+            </div>
+          </md-input-container>
+        </div>
+        
+        <div layout-gt-sm="row" id="dept" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>학과</label>
+            <input name="dept" ng-model="user.dept" autocomplete="off"/>
+            <div ng-messages="projectForm.dept.$error">
+              <div ng-message="required">학과를 입력해주세요!</div>
+            </div>
+          </md-input-container>
+        </div>
+        
+        <div layout-gt-sm="row" id="gradu" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
+          <md-input-container class="md-block" flex-gt-sm>
+            <label>졸업여부</label>
+            <md-checkbox ng-model="user.gradu" aria-label="Checkbox 1" id="gradu"></md-checkbox>
+            <div class="hint">졸업을 하셧다면 체크버튼을 눌러주세요.</div>
+          </md-input-container>
+        </div>
+        <span class="signWarn imgWarn col-xs-12 col-sm-12 col-md-12 col-lg-12">정보를 정확히 입력하지 않을경우 가입거절 또는 불이익이 있을수 있습니다</span>
+        <md-button class="md-raised md-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" id="signupBtn" type="submit">가입하기</md-button>
+        
+      </form>
+    </div>
+
+  </div>
+</div>

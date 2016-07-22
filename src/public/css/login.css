@@ -19,12 +19,13 @@
 }
 .loginform form {
   margin-top: 80px;
+  padding: 0 10px;
 }
 .inputdemoErrors .inputErrorsApp {
   min-height: 48px; 
 }
 md-input-container {
-  width: 300px;
+  width: 100%;
 }
 
 #login {
@@ -60,6 +61,7 @@ md-input-container:not(.md-input-invalid).md-input-has-value label, md-input-con
 }
 md-input-container.md-default-theme .md-input, md-input-container .md-input, md-input-container.md-default-theme:not(.md-input-invalid).md-input-focused .md-input, md-input-container:not(.md-input-invalid).md-input-focused .md-input {
   font-size: 1.5em;
+  width: 100%;
   color: #fff;
   border-color: #fff;
   border-width: 0 0 2px 0;

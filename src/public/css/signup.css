@@ -1,0 +1,272 @@
+.signup-width {
+  padding: 0 20px;
+  width: 100%;
+}
+.signup-height {
+  padding: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.msg-error {
+  color: #f34235;
+  font-size: 20px;
+}
+.up {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.hint {
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.signUpName {
+  position: relative;
+  top: 23px;
+}
+/* 캘린더 선택하기전 입력창 색 */
+.dateSel {
+  background-color: transparent;
+  width: 350px;
+  padding: 0;
+  margin-left: -20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+/* 캘린더 아이콘 */
+.md-datepicker-calendar-icon {
+  margin-top: 5px;
+  margin-right: -20px;
+}
+.md-datepicker-calendar-icon:hover {
+  color: #f34235;
+}
+/* 캘린더 화살표 */
+.md-datepicker-triangle-button .md-datepicker-expand-triangle {
+  border-top-color: #fff;
+}
+.md-datepicker-triangle-button:hover .md-datepicker-expand-triangle {
+  border-top-color: #f34235;
+}
+.md-datepicker-triangle-button {
+  top: 7px;
+}
+.md-datepicker-expand-triangle {
+  border-left: 7px solid rgba(0, 0, 0, 0);
+  border-right: 7px solid rgba(0, 0, 0, 0);
+  border-top: 7px solid;
+}
+/* 캘린더 아이콘 선택후 색상 */
+.md-datepicker-open .md-datepicker-calendar-icon {
+  fill: #f34235;
+}
+/* 캘린더 입력창 글스타일 */
+.md-datepicker-input {
+  width: 260px;
+  color: #fff;
+  font-size: 20px;
+}
+/* 캘린더 입력창 밑줄 */
+.md-datepicker-input-container {
+  border-bottom: 2px solid #fff;
+}
+.md-datepicker-input-container.md-datepicker-focused {
+  border-bottom-color: #fff;
+}
+/* 캘린더 테두리 */
+.md-datepicker-calendar-pane {
+  border-color: transparent;
+  background-color: transparent;
+}
+/* 캘린더 해더 */
+.md-calendar-day-header {
+  background-color: #2a3238;
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* 캘린더 바디 */
+.md-calendar-month {
+  background-color: #2a3238;
+}
+.md-calendar-scroll-mask {
+  border: 1px solid #fff;
+}
+/* 캘린더 숫자색 */
+.md-calendar-date-selection-indicator {
+  color: #fff;
+}
+.md-calendar-date-selection-indicator:hover {
+  background-color: #fff;
+  color: #2a3238;
+}
+/* 오늘 날짜 배경 */
+.md-calendar-date.md-focus .md-calendar-date-selection-indicator {
+  background-color: #f34235;
+  border: 0;
+}
+/* 숫자 가운데로 가기 */
+.md-calendar-date-selection-indicator {
+  line-height: 38px;
+}
+.md-whiteframe-1dp, .md-whiteframe-z1 {
+  box-shadow: none;
+}
+/* 배경 흰색 나오는거 제거 */
+.md-datepicker-input-mask-opaque, .md-datepicker-calendar {
+  background-color: transparent;
+}
+
+.birth-gender-title {
+  font-size: 20px;
+}
+
+/* 성별 선택 */
+/* radio male */
+md-radio-group:not([disabled]) .md-primary.md-checked .md-off, md-radio-button:not([disabled]).md-primary.md-checked .md-off {
+  border-color: #f34235;
+}
+md-radio-group:not([disabled]) .md-primary .md-on, md-radio-button:not([disabled]).md-primary .md-on {
+  background-color: #f34235;
+}
+/* radio female */
+md-radio-button.md-checked .md-off {
+  border-color: #f34235;
+}
+md-radio-button .md-on {
+  background-color: #f34235;
+}
+.radio-parent {
+  width: 150px;
+  position: relative;
+  top: 7px;
+}
+.radio-female {
+  position: absolute;
+  top: -16px;
+  left: 90px;
+}
+
+/* 파일 업로드 */
+.profileImg {
+  display: block;
+}
+#img {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+.img-label {
+  text-align: center;
+  font-size: 25px;
+  margin: 0px auto;
+  margin-top: 10px;
+}
+.img-btn {
+  width: 300px;
+  padding: 10px 0;
+  border: 2px solid #fff;
+}
+.img-btn:hover {
+  border: 2px solid #2a3238;
+  background-color: #2a3238;
+  cursor: pointer;
+}
+.imgWarn {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* 직업 선택 */
+.selJob {
+  margin-top: 50px;
+}
+.md-select-value {
+  background-color: #fff;
+  padding: 0 5px;
+  padding-bottom: 5px;
+}
+.md-select-value > span {
+  color: #2a3238;
+  font-size: 25px;
+}
+.md-select-value > span > .md-text, .md-select-icon {
+  color: #2a3238;
+  font-size: 25px;
+}
+md-select:not([disabled]):focus .md-select-value {
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom-color: #2a3238;
+}
+.md-select-menu-container.md-active.md-clickable > md-select-menu > md-content {
+  background-color: #fff;
+}
+.md-ink-ripple > .md-text {
+  color: #2a3238;
+  font-size: 25px;
+}
+md-option[selected] > .md-text {
+  color: #f34235; 
+}
+
+/* 졸업 여부 */
+/* 체크박스 위치 */
+md-checkbox {
+  top: -7px;
+  left: 120px;
+}
+/* 체크박스 테두리 색 */
+md-checkbox .md-icon {
+  border-color: #fff;
+}
+/* 체크박스 크기 */
+md-checkbox .md-icon {
+  width: 40px;
+  height: 40px;
+}
+/* 체크 모양 */
+md-checkbox.md-checked .md-icon:after {
+  left: 12px;
+  top: 0;
+  width: 15px;
+  height: 30px;
+}
+/* 클릭효과 크기 - 체크박스 사이즈와 동일하게 적용*/
+md-checkbox .md-container {
+  width: 40px;
+  height: 40px;
+}
+/* 체크된상태 내부 색상 */
+md-checkbox.md-checked .md-icon {
+  background-color: #f34235;
+}
+
+/* 회원가입 버튼 */
+#signupBtn {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%,0);
+  background-color: #f34235;
+}
+#signupBtn:hover {
+  background-color: #fff;
+}
+#signupBtn:hover > span {
+  color: #2a3238;
+}
+
+.signWarn {
+  margin-top: 30px;
+  text-align: center;
+}
+

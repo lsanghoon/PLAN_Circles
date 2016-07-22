@@ -14,7 +14,6 @@ myApp.controller('mainCtrl', function ($location, $uibModal, $scope, $http, $log
   
   //파일 업로드
   $(document).on("click", "#upload", function() {
-    console.log("upload..");
     if ($("#file").prop("files")[0] !== undefined) {
 
       $('#success-title').html('양식을 보내는 중입니다...');
@@ -43,15 +42,12 @@ myApp.controller('mainCtrl', function ($location, $uibModal, $scope, $http, $log
         data: form_data,
         type: 'post',
         success: function(re) {
-          console.log(re.success);
           if (re.success == 'true') {
-            console.log('성공');
             $('#success-title').html('성공적으로 양식을 보냈습니다.');
             $('.success-text').html('<i class="fonti um-check"></i>');
             $('#success-btn').css('display','');
             $('#file').val('');
           } else if (re.success == 'false') {
-            console.log('실패');
             $('.alert-text').html('업로드 실패 관리자에게 문의하세요.');
             $('#noFile').css('display','');
           }
@@ -59,7 +55,6 @@ myApp.controller('mainCtrl', function ($location, $uibModal, $scope, $http, $log
       }); // ajax - end
 
     } else {
-      console.log('파일없음');
       $('.alert-text').html('파일을 선택하지 않았습니다.');
       $('#noFile').css('display','');
     } // else - end

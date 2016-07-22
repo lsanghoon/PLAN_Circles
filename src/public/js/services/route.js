@@ -1,4 +1,11 @@
-var myApp = angular.module('myApp', ['ngMaterial','ui.router','ui.bootstrap','youtube-embed', 'ngMessages']);
+var myApp = angular.module('myApp', [
+  'ngMaterial',
+  'ui.router',
+  'ui.bootstrap',
+  'youtube-embed', 
+  'ngMessages',
+  'myApp.directives'
+]);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -17,6 +24,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "views/login.html",
     controller: "loginCtrl"
   })
+  .state('signup', {
+    url: "/signup",
+    templateUrl: "views/signup.html",
+    controller: "signUpCtrl"
+  })
   .state('planInfo', {
     url: "/planInfo",
     templateUrl: "views/planInfo.html"
@@ -29,6 +41,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     url: "/adminInfo",
     templateUrl: "views/adminInfo.html"
   })
+  .state('faq', {
+    url: "/faq",
+    templateUrl: "views/faq.html",
+    controller:"faqCtrl"
+  })
   .state('tNotice', {
     url: "/tNotice",
     templateUrl: "views/tNotice.html",
@@ -38,10 +55,5 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     url: "/sNotice",
     templateUrl: "views/sNotice.html",
     controller:"sNoticeCtrl"
-  })
-  .state('faq', {
-    url: "/faq",
-    templateUrl: "views/faq.html",
-    controller:"faqCtrl"
   })
 });
