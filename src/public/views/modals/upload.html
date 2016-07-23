@@ -1,0 +1,36 @@
+<form data-ng-submit="insert()">
+  
+    <div class="modal-header">
+        <div class="col-md-10">
+            <h4 class="modal-title"><span class="glyphicon glyphicon-picture"></span> Upload Image</h4>
+        </div>
+        <div class="col-md-2 right">
+            <a class="close" href data-ng-click="$dismiss()"><span class="glyphicon glyphicon-remove"></span></a>
+        </div>
+    </div>
+  
+    <div class="modal-body modal-body-img">
+      <div class="imgUp-warn">
+        이미지는 최대 1000 X 1000 까지만 가능하면 5mb를 넘을수 없습니다.
+      </div>
+      
+      <img data-ng-src="{{image}}" class="img-preview">
+      
+      <br><br>
+      
+      <div class="imgUp-info">
+        파일명 : {{f.name}} {{errFile.name}} <br>
+      </div>
+      <div class="imgUp-err">
+        {{errFile.$error}} {{errFile.$errorParam}} <br>
+        {{errorMsg}}
+      </div>
+    </div>
+  
+    <div class="modal-footer center clearfix">
+        <button data-ng-click="$dismiss()" type="button" class="btn btn-default pull-left">취소</button>
+        <button type="submit" data-ng-disabled="image == null || image == '' || image == 'img/eun.png'" class="btn btn-primary pull-right">사진삽입</button>
+        <button type="file" ngf-select="uploadImg($file, $invalidFiles)" accept="image/*" ngf-max-height="1000" ngf-max-width="1000" ngf-max-size="5MB" class="btn btn-primary pull-right">사진선택</button>
+    </div>
+  
+</form>

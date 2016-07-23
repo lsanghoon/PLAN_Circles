@@ -4,13 +4,17 @@ var myApp = angular.module('myApp', [
   'ui.bootstrap',
   'youtube-embed', 
   'ngMessages',
-  'myApp.directives'
+  'myApp.directives',
+  'textAngular',
+  'angularSpectrumColorpicker',
+  'ui.bootstrap.dropdownToggle',
+  'ngFileUpload'
 ]);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
   // 맞지 않는 모든 URL에 대해 redirect to /deshBoard
-  $urlRouterProvider.otherwise("/main");
+  $urlRouterProvider.otherwise("/form");
 
   // SET UP states
   $stateProvider
@@ -55,5 +59,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     url: "/sNotice",
     templateUrl: "views/sNotice.html",
     controller:"sNoticeCtrl"
+  })
+  .state('form', {
+    url: '/form',
+    templateUrl: 'views/form.html',
+    controller: 'formCtrl'
   })
 });

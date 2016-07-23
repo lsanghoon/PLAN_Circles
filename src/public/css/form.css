@@ -1,0 +1,38 @@
+/* 게시글 에디터 */
+.text-area {
+  margin-top: 150px;
+  color: #000;
+}
+/* 에디터 툴바 */
+.ng-scope.ng-isolate-scope.ta-toolbar.btn-toolbar > .btn-group {
+  margin-right: 10px;
+}
+[ta-button] {
+	height: 44px;
+	margin-bottom: 5px;
+}
+
+/* 이미지 삽입 */
+.modal-body-img {
+  width: 100%;
+}
+.imgUp-warn {
+  font-size: 19px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.img-preview {
+  max-width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.imgUp-info {
+  font-size: 19px;
+  text-align: center;
+}
+.imgUp-err {
+  font-size: 19px;
+  text-align: center;
+  color: red;
+}

@@ -25,6 +25,7 @@ app.use(session({
 }))
 
 app.post('/upload', dataController.fileUploadSendMail);
+app.post('/imgUpload', dataController.imgUpload);
 app.post('/login', userController.login);
 app.get('/logout', userController.logout);
 
