@@ -1,8 +1,13 @@
-myApp.controller("formCtrl", ['$scope',
-  function($scope) {
-    $scope.html = "";
+//myApp.controller("formCtrl", ['$scope', function($scope) {
+myApp.controller('formCtrl', function ($location, $scope) {
+  $scope.html = "";
+  
+  $scope.addContent = function() {
+    console.log($scope.html);
+    //서버로 게시글 올리기
+    
   }
-]);
+});
 
 myApp.config(function($provide){
   $provide.decorator('taOptions', ['taRegisterTool', '$delegate', '$uibModal', function (taRegisterTool, taOptions, $uibModal) {
