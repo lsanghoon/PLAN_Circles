@@ -1,8 +1,18 @@
 <div class="main">
   <div class="main-container">
-    <div class="text-area">
-      <div text-angular ng-model="html"></div>
-<!--      <pre ng-bind="html" class="white-box ng-binding"></pre>-->
-    </div>
+    
+    <form ng-submit="addContent()">
+      <div class="form-title">
+        <
+      </div>
+
+      <div class="form-text">
+        <div text-angular ng-model="html"></div>
+  <!--      <pre ng-bind="html" class="white-box ng-binding"></pre>-->
+      </div>
+        
+      <md-button class="md-raised md-primary" id="insertContent" type="submit" ng-model="insertContent">게시물 등록</md-button>
+    </form>
+    
   </div>
 </div>
