@@ -20,6 +20,7 @@
 .loginform form {
   margin-top: 80px;
   padding: 0 10px;
+  width: 100%;
 }
 .inputdemoErrors .inputErrorsApp {
   min-height: 48px; 
@@ -84,7 +85,8 @@ md-input-container ng-message, md-input-container data-ng-message, md-input-cont
 
 /* 로그인 실패알림창 */
 #loginFail {
-  position: absolute;
+  z-index: 1001;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -106,7 +108,7 @@ md-input-container ng-message, md-input-container data-ng-message, md-input-cont
   margin-top: 10px;
 }
 .alert-text {
-  font-size: 20px;
+  font-size: 25px;
   margin: 10px 0;
   text-align: center;
 }
@@ -115,8 +117,9 @@ md-input-container ng-message, md-input-container data-ng-message, md-input-cont
   font-size: 20px;
   font-weight: 400;
   margin-top: 5px;
-  position: relative;
+  position: absolute;
   left: 50%;
+  bottom: 20px;
   transform: translate(-50%, 0);
 }
 

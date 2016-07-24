@@ -49,7 +49,7 @@ myApp.controller('loginCtrl', function ($http, $scope, $location) {
         
         div.append(
           '<li class="dropdown">' +
-            '<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' +
+            '<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' +
               data.name +
               '<span class="caret"></span>' +
             '</a>' +

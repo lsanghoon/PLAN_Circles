@@ -28,6 +28,8 @@ app.post('/upload', dataController.fileUploadSendMail);
 app.post('/imgUpload', dataController.imgUpload);
 app.post('/login', userController.login);
 app.get('/logout', userController.logout);
+app.post('/signup', userController.signup);
+app.post('/cropImg', userController.cropImg);
 
 
 app.get('*', function(req, res) {

@@ -1,6 +1,6 @@
 'use strict';
 
-/* Directives */
+/* 패스워드 같은지 검증 */
 angular.module('myApp.directives', [])
 .directive('pwCheck', [function () {
   return {

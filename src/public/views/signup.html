@@ -6,7 +6,7 @@
 
         <div layout-gt-sm="row" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>이메일</label>
+            <label>이메일<font style="color:#f34235;font-size:25px">*</font></label>
             <input required type="email" name="email" ng-model="user.email" minlength="10" md-maxlength="100" ng-pattern="/^.+@.+\..+$/" autocomplete="off" />
             <div ng-messages="projectForm.email.$error" role="alert">
               <div ng-message-exp="['required', 'minlength', 'md-maxlength', 'pattern']">
@@ -18,7 +18,7 @@
 
         <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>패스워드</label>
+            <label>패스워드<font style="color:#f34235;font-size:25px">*</font></label>
             <input required type="password" id="pw1" name="password" ng-model="user.password" minlength="8" md-maxlength="30" autocomplete="off" />
             <div ng-messages="projectForm.password.$error" role="alert">
               <div ng-message-exp="['required', 'minlength', 'md-maxlength']">
@@ -30,7 +30,7 @@
 
         <div layout-gt-sm="row" class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>패스워드 확인</label>
+            <label>패스워드 확인<font style="color:#f34235;font-size:25px">*</font></label>
             <input required type="password" id="pw2" name="pw2" ng-model="pw2" minlength="8" md-maxlength="30" autocomplete="off" pw-check="pw1"/>
 <!--                <div class="msg-block" ng-show="projectForm.$error">-->
             <div class="msg-block" ng-show="projectForm.$error">
@@ -43,7 +43,7 @@
 
         <div layout-gt-sm="row"  class="up signUpName col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>이름</label>
+            <label>이름<font style="color:#f34235;font-size:25px">*</font></label>
             <input md-maxlength="30" required name="name" ng-model="user.name"  autocomplete="off"/>
             <div ng-messages="projectForm.name.$error">
               <div ng-message="required">이름을 입력해주세요!</div>
@@ -53,14 +53,14 @@
         </div>
         
         <div class="celNgen up col-xs-12 col-sm-12 col-md-6 col-lg-6">
-          <label class="birth-gender-title">생년월일 / 성별</label>
+          <label class="birth-gender-title">생년월일 / 성별<font style="color:#f34235;font-size:25px">*</font></label>
           <div layout-gt-xs="row">
             <md-datepicker required class="dateSel col-xs-12 col-sm-12 col-md-8 col-lg-8" ng-model="user.birth" md-placeholder="ex) YYYY.MM.DD">
             </md-datepicker>
 
             <md-radio-group ng-model="user.gender" class="radio-parent col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <md-radio-button value="male" class="md-primary radio-male">남</md-radio-button>
-              <md-radio-button value="female" class="radio-female">여</md-radio-button>
+              <md-radio-button value="M" class="md-primary radio-male">남</md-radio-button>
+              <md-radio-button value="F" class="radio-female">여</md-radio-button>
             </md-radio-group>
           </div>
         </div>
@@ -69,7 +69,7 @@
         
         <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>핸드폰번호</label>
+            <label>핸드폰번호<font style="color:#f34235;font-size:25px">*</font></label>
             <input required name="cphone" ng-model="user.cphone" type="tel" minlength="9" md-maxlength="11" autocomplete="off"/>
             <div class="hint">' - ' 없이 입력해주세요</div>
             <div ng-messages="projectForm.cphone.$error" role="alert">
@@ -82,7 +82,7 @@
 
         <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>집전화번호</label>
+            <label>집전화번호<font style="color:#f34235;font-size:25px">*</font></label>
             <input required type="tel" name="hphone" ng-model="user.hphone" minlength="9" md-maxlength="11" autocomplete="off"/>
             <div class="hint">' - ' 없이 입력해주세요</div>
             <div ng-messages="projectForm.hphone.$error">
@@ -95,24 +95,17 @@
 
         <div layout-gt-sm="row"  class="up col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>주소</label>
+            <label>주소<font style="color:#f34235;font-size:25px">*</font></label>
             <input required name="addr" ng-model="user.addr" autocomplete="off"/>
             <div ng-messages="projectForm.addr.$error">
               <div ng-message="required">주소를 입력해주세요!</div>
             </div>
           </md-input-container>
         </div>
-
-        <div layout-gt-sm="row" class="up profileImg col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <label for="img" class="img-label img-btn">프로필 이미지 선택</label>
-          <input type="file" name="img" ng-model="user.img" id="img" required>
-          <div class="imgWarn">본 이미지는 명단작성시 이용되므로 자신의 이미지를 올리지 않을 경우 가입거절 또는 불이익을 받을 수 있습니다.</div>
-
-        </div>
         
         <div layout-gt-sm="row" class="up selJob col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <md-input-container>
-            <label>직업</label>
+            <label>직업<font style="color:#f34235;font-size:25px">*</font></label>
             <md-select ng-model="user.job" md-selected-text="getSelected()">
               <md-option ng-repeat="job in jobs" ng-value="job">
                 {{job}}
@@ -123,9 +116,10 @@
         
         <div layout-gt-sm="row" id="school" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>학교명</label>
+            <label>학교명<font style="color:#f34235;font-size:25px">*</font></label>
             <input name="school" ng-model="user.school" autocomplete="off"/>
-            <div ng-messages="projectForm.school.$error">
+            <div class="hint" id="hint-school"></div>
+            <div ng-messages="projectForm.school.$error" id="school">
               <div ng-message="required">학교명을 입력해주세요!</div>
             </div>
           </md-input-container>
@@ -133,19 +127,22 @@
         
         <div layout-gt-sm="row" id="stu_no" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>학번</label>
-            <input name="stu_no" ng-model="user.stu_no" autocomplete="off"/>
-            <div ng-messages="projectForm.stu_no.$error">
-              <div ng-message="required">학번을 입력해주세요!</div>
+            <label>학번<font style="color:#f34235;font-size:25px">*</font></label>
+            <input name="stu_no" ng-model="user.stu_no" minlength="3" autocomplete="off"/>
+            <div ng-messages="projectForm.stu_no.$error" id="stuNo">
+              <div ng-message-exp="['minlength']" role="alert">
+                학번을 입력해주세요!
+              </div>
             </div>
           </md-input-container>
         </div>
         
         <div layout-gt-sm="row" id="dept" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>학과</label>
+            <label>학과<font style="color:#f34235;font-size:25px">*</font></label>
             <input name="dept" ng-model="user.dept" autocomplete="off"/>
-            <div ng-messages="projectForm.dept.$error">
+            <div class="hint">풀네임으로 입력해주세요. <font style="color:#f34235;font-size:25px">예)컴퓨터공학과(o) 컴공과(x)</font></div>
+            <div ng-messages="projectForm.dept.$error" id="dept">
               <div ng-message="required">학과를 입력해주세요!</div>
             </div>
           </md-input-container>
@@ -153,15 +150,23 @@
         
         <div layout-gt-sm="row" id="gradu" class="up col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display:none;">
           <md-input-container class="md-block" flex-gt-sm>
-            <label>졸업여부</label>
+            <label>졸업여부<font style="color:#f34235;font-size:25px">*</font></label>
             <md-checkbox ng-model="user.gradu" aria-label="Checkbox 1" id="gradu"></md-checkbox>
             <div class="hint">졸업을 하셧다면 체크버튼을 눌러주세요.</div>
           </md-input-container>
         </div>
+        
         <span class="signWarn imgWarn col-xs-12 col-sm-12 col-md-12 col-lg-12">정보를 정확히 입력하지 않을경우 가입거절 또는 불이익이 있을수 있습니다</span>
         <md-button class="md-raised md-primary col-xs-12 col-sm-12 col-md-12 col-lg-12" id="signupBtn" type="submit">가입하기</md-button>
         
       </form>
+    </div>
+
+    <div class="alert alert-danger" id="signUpFail" role="alert" style="display:none;">
+      <strong class="alert-title">로그인 실패!</strong>
+      <div class="alert-text">{{ signUpFailText }}</div>
+      <div class="alert-status">{{ signUpFailEx }}</div>
+      <button type="button" class="btn btn-danger" id="signUpFail-btn">확인</button>
     </div>
 
   </div>

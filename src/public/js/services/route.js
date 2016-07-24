@@ -8,13 +8,14 @@ var myApp = angular.module('myApp', [
   'textAngular',
   'angularSpectrumColorpicker',
   'ui.bootstrap.dropdownToggle',
-  'ngFileUpload'
+  'ngFileUpload',
+  'ngImgCrop'
 ]);
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
   // 맞지 않는 모든 URL에 대해 redirect to /deshBoard
-  $urlRouterProvider.otherwise("/form");
+  $urlRouterProvider.otherwise("/imgcrop");
 
   // SET UP states
   $stateProvider
@@ -32,6 +33,11 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     url: "/signup",
     templateUrl: "views/signup.html",
     controller: "signUpCtrl"
+  })
+  .state('imgcrop', {
+    url: "/imgcrop",
+    templateUrl: "views/imgcrop.html",
+    controller: "imgCropCtrl"
   })
   .state('planInfo', {
     url: "/planInfo",

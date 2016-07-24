@@ -8,12 +8,12 @@ CREATE TABLE USER (
   cPHONE VARCHAR(11) NOT NULL COMMENT '휴대폰번호',
   hPHONE VARCHAR(11) NOT NULL COMMENT '집번호',
   ADDR VARCHAR(255) NOT NULL COMMENT '주소',
-  pIMG VARCHAR(255) NOT NULL COMMENT '이미지',
   JOB VARCHAR(10) NOT NULL COMMENT '직업',
   SCHOOL VARCHAR(255) COMMENT '학교명',
   STU_NO VARCHAR(20) COMMENT '학번',
   DEPT VARCHAR(30) COMMENT '학과',
   GRADUATE VARCHAR(1) COMMENT '졸업여부',
+  pIMG VARCHAR(255) COMMENT '이미지',
   APPRO VARCHAR(1) NOT NULL DEFAULT '0' COMMENT '승인여부'
 );
 
@@ -29,4 +29,15 @@ values ('aaa@aaa.aaa', 'aaaa', 'name', '1992-10-10', 'M', '00000000', '0000000',
 insert into user (email, pwd, name, birth, gender, cphone, hphone, addr, pimg, job) 
 values ('sss@sss.sss', 'ssss', 'ssss', '1992-11-11', 'F', '00000000', '0000000', '서울시 ㅇㅇ구 ㅇㅇ동', 'sss.jpg', '직장인');
 
-CREATE TABLE 
+
+
+
+
+회원가입
+기본정보 입력 => 가입하기 => 프로필이미지 설정 => 확인 => 끝
+/signup                      /addProfileImg
+
+
+// 수정해야 할것
+서버 세션관리 문제가 많다.... 
+로그인 passport로 바꾸자...

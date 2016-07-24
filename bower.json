@@ -27,7 +27,9 @@
     "textAngular": "^1.5.2",
     "font-awesome": "^4.6.3",
     "ng-file-upload-shim": "^12.0.4",
-    "ng-file-upload": "^12.0.4"
+    "ng-file-upload": "^12.0.4",
+    "angular-modal-service": "^0.10.1",
+    "ng-img-crop": "ngImgCrop#^0.3.2"
   },
   "install": {
     "path": "src/public/lib",
@@ -45,7 +47,9 @@
       "textAngular": "bower_components/textAngular/dist/**",
       "font-awesome": "bower_components/font-awesome/**",
       "ng-file-upload-shim": "bower_components/ng-file-upload-shim/ng-file-upload-shim.js",
-      "ng-file-upload": "bower_components/ng-file-upload/ng-file-upload.js"
+      "ng-file-upload": "bower_components/ng-file-upload/ng-file-upload.js",
+      "angular-modal-service": "bower_components/angular-modal-service/dst/**",
+      "ng-img-crop": "bower_components/ng-img-crop/compile/unminified/**"
     }
   }
 }
